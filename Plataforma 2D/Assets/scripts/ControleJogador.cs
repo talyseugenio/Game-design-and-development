@@ -10,6 +10,8 @@ public class ControleJogador : MonoBehaviour
 	private bool pulando = false;
 	private Animator animator;
 	public Transform camera;
+	private AudioSource somPulo;
+	private AudioSource somMoeda;
 
     void Start()
     {
@@ -17,6 +19,9 @@ public class ControleJogador : MonoBehaviour
 		animator = GetComponent<Animator> ();
 		//definir a posiçõa inicial da câmera
 		camera.position = new Vector3(1.21f,0.0f,-10.0f);
+		//instância som 
+		somPulo = GetComponents<AudioSource>()[1];
+		somMoeda = GetComponents<AudioSource>()[2];
     }
     
     void Update()
@@ -35,6 +40,7 @@ public class ControleJogador : MonoBehaviour
             rig.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
 			pulando = true;
 			animator.SetBool ("Pulando", true);
+			somPulo.Play();
         }
 		float camx = rig.transform.position.x + 3;
 		if(camx < 1.21f){
@@ -49,6 +55,11 @@ public class ControleJogador : MonoBehaviour
 	void OnCollisionEnter2D(Collision2D coll) {
 		pulando = false;
 		animator.SetBool ("Pulando", false);
+	}
+
+	void OnTriggerEnter2D(Collider2D coll){
+		somMoeda.Play ();
+		Destroy (coll.gameObject);
 	}
 
 
