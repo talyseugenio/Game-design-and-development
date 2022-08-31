@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\scripts\ControleJogador.cs" />
      <Compile Include="Assets\scripts\ControleNPC.cs" />
+     <Compile Include="Assets\scripts\Fireball.cs" />
      <None Include="Assets\sprites\inimigo\inimigo\visit_bevouliin_dot_com.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
