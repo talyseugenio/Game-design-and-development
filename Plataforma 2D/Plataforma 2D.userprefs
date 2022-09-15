@@ -1,10 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Fireball.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\ControleNPC.cs">
     <Files>
       <File FileName="Assets\scripts\ControleJogador.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\ControleNPC.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\Fireball.cs" Line="15" Column="53" />
+      <File FileName="Assets\scripts\ControleNPC.cs" Line="15" Column="2" />
+      <File FileName="Assets\scripts\Fireball.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
