@@ -99,6 +99,15 @@ public class ControleJogador : MonoBehaviour {
 			//muda de fase
 			 SceneManager.LoadScene("Fase2", LoadSceneMode.Single);
 		}
+        if (coll.gameObject.tag == "Finish2") {
+			//muda de fase
+			 SceneManager.LoadScene("Fase3", LoadSceneMode.Single);
+		}
+        if (coll.gameObject.tag == "Finish3") {
+			//muda de fase
+			 SceneManager.LoadScene("Fase4", LoadSceneMode.Single);
+		}
+
 
 		somMoeda.Play ();
 		Destroy (coll.gameObject);
